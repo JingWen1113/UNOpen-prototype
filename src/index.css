@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.blue-text {
+  color:blue;
+}
+
+
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-top: 10%;
+  background-image: linear-gradient(to bottom right, #fff, #fff 120%);
+}
+
+.card {
+  width: 21vw;
+  height: 30.47vw;
+  perspective: 100vw;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.card:nth-child(1) .front {
+  background-image: url("https://www.cuou.net/Uploads/ueditor/php/upload/image/20190515/1557912862295308.jpg");
+}
+.card:nth-child(2) .front {
+  background-image: url("https://www.cuou.net/Uploads/ueditor/php/upload/image/20190515/1557912021260725.png");
+}
+.card:nth-child(3) .front {
+  background-image: url("https://www.cuou.net/Uploads/ueditor/php/upload/image/20190515/1557911874155146.png");
+}
+
+.card:nth-child(4) .front {
+  background-image: url("https://www.cuou.net/Uploads/ueditor/php/upload/image/20190515/1557913541998387.jpg");
+}
+.card .face {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98), box-shadow 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98), border-width 0.35s cubic-bezier(0.13, 1.03, 0.39, 0.98);
+  box-shadow: 0px 1.2vw 4vw -1vw rgba(0, 0, 0, 0.6);
+  background-position: 0 0;
+  background-size: 21vw;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 1.1vw;
+}
+.card .front {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/22/King_of_spades2.svg");
+  transform: rotateX(0deg);
+}
+.card .back {
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.letsplayuno.com%2Fnews%2Fguide%2F20181213%2F30092_732567.html&psig=AOvVaw02ftkpz77pgK7KW_sz0_RE&ust=1614290956464000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND7wszEg-8CFQAAAAAdAAAAABAD");
+  transform: rotateX(180deg);
+}
+.card:hover .front, .card.hover .front {
+  transform: rotateX(20deg);
+  box-shadow: 0px 10vw 9vw -6vw rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+.card:hover .back, .card.hover .back {
+  transform: rotateX(200deg);
+  box-shadow: 0px -2vw 4vw -2vw rgba(35, 2, 2, 0.68), inset 0px -8vw 12vw -5vw rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.card.flipped .front {
+  transform: rotateX(180deg);
+}
+.card.flipped .back {
+  transform: rotateX(360deg);
+}
+.card.flipped:hover .front, .card.flipped.hover .front {
+  transform: rotateX(200deg);
+}
+.card.flipped:hover .back, .card.flipped.hover .back {
+  transform: rotateX(340deg);
+}
+
+button {
+  background: #fff;
+  color: #333;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 10px 25px;
+  margin: 2px ;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.button-play-card {
+position: absolute;
+bottom: -100px;
+left: 0px;
+} 
