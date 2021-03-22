@@ -1,6 +1,6 @@
 # Below is a quick look on the prototype release-1:
+<img src='http://g.recordit.co/K8s0YhCqzn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-http://g.recordit.co/K8s0YhCqzn.gif
 
 # Getting Started with Create React App
 
