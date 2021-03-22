@@ -1,3 +1,7 @@
+# Below is a quick look on the prototype release-1:
+
+http://g.recordit.co/K8s0YhCqzn.gif
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
